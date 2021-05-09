@@ -20,7 +20,6 @@ from utils.average_meter import AverageMeter
 from datetime import datetime
 from time import time
 from tensorboardX import SummaryWriter
-from configs.config_ffhq_irregular_256 import cfg
 
 import numpy as np
 
@@ -29,9 +28,9 @@ from utils.ssim_loss import SSIM_Loss
 
 def get_args_from_command_line():
     parser = argparse.ArgumentParser(description='The argument parser of runner')
+    parser.add_argument('--config', dest='config', help='Dataset config file', defaule='ffhq_square')
     parser.add_argument('--test', dest='test', help='Test neural networks', action='store_true')
     parser.add_argument('--weights', dest='weights', help='Initialize network from the weights file', default=None)
-    parser.add_argument('--weights_path', dest='weights', help='Loading weights', default=None)
     parser.add_argument('--init_lr', dest='init_lr', help='Init lr', default=None)
     args = parser.parse_known_args()[0]
     return args
@@ -254,6 +253,12 @@ def test_net(cfg, epoch_idx=-1, test_data_loader=None, test_writer=None, net=Non
 if __name__ == '__main__':
     logging.basicConfig(format='[%(levelname)s] %(asctime)s %(message)s', level=logging.DEBUG)
     args = get_args_from_command_line()
+    if args.config == 'ffhq_irregular':
+        from configs.config_ffhq_irregular_256 import cfg
+    elif args.config == 'paris':
+        from configs.config_paris_irregular_256 import cfg
+    else:
+        from configs.config_ffhq_square_128 import cfg
     os.environ["CUDA_VISIBLE_DEVICES"] = cfg.const.device
     if not args.test:
         if args.weights:
