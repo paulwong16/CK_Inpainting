@@ -14,21 +14,7 @@ in our experiments. For the irregular masks, we use the test set of
 Since we don't have the rights to hold any datasets, please download them from original sources. 
 
 For FFHQ dataset, you can use the .txt files under `dataset/ffhq/` to get exactly same splits in our experiments.
-For ParisStreetView dataset, you should create your own data splits .txt files and put them under `dataset/paris/`
-
-Organize your dataset as follows:
-```
-
-├── data
-│   ├── kitti
-│   │   │── ImageSets
-│   │   │── training
-│   │   │   ├──calib & velodyne & label_2 & image_2 & (optional: planes)
-│   │   │── testing
-│   │   │   ├──calib & velodyne & image_2
-├── pcdet
-├── tools
-```
+For ParisStreetView dataset, you should create your own data splits .txt files and put them under `dataset/paris/`.
 
 ## Get Started
 
@@ -39,6 +25,20 @@ Basic environments: `Python >= 3.6` and `PyTorch >= 1.4.0`.
 Required packages:
 ```bash
 pip install -r requirements.txt
+```
+
+Organize your dataset and codes as follows:
+
+```
+
+├── data
+│   ├── ffhq
+│   │   │── images1024x1024 # (1024*1024)
+│   │   │── thumbnails128x128 # (128*128)
+│   ├── paris
+│   ├── mask
+│   │   │── testing_mask_dataset
+├── CK_Inpainting
 ```
 
 ### Train
@@ -69,3 +69,23 @@ python runner_inpainting.py --config={CONFIG} --test --weights={CHECKPOINTS_PATH
 ```
 
 ![Result1](http://paulwong16.github.io/files/MM21/teaser_mm.png)
+
+
+## Pre-trained Model
+
+Coming soon.
+
+## License
+
+CK_Inpainting is release under MIT license (see [LICENSE](https://github.com/paulwong16/CK_Inpainting/blob/master/LICENSE)).
+
+## Acknowledgement
+
+We thank anonymous reviewers in ECE 644 Winter 2021 at the University of Alberta.
+
+This project is not possible without multiple great opensourced codebases. 
+We list some notable examples below.
+
+- [KPN-PyTorch](https://github.com/z-bingo/kernel-prediction-networks-PyTorch)
+
+- [KPN](https://github.com/google/burst-denoising)

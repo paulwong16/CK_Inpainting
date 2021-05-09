@@ -7,7 +7,7 @@ __C.places = edict()
 __C.places.train_file_list = './dataset/paris/train.txt'
 __C.places.test_file_list = './dataset/paris/test.txt'
 __C.places.val_file_list = './dataset/paris/test.txt'
-__C.places.base_path = '../FFHQ/paris_packed/'
+__C.places.base_path = '../data/paris/'
 __C.places.mask_size = 128
 
 __C.dataset = edict()

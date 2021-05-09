@@ -7,7 +7,7 @@ __C.ffhq = edict()
 __C.ffhq.train_file_list = './dataset/ffhq/train_128.txt'
 __C.ffhq.test_file_list = './dataset/ffhq/test_128.txt'
 __C.ffhq.val_file_list = './dataset/ffhq/val_128.txt'
-__C.ffhq.base_path = '../data/thumbnails128x128/'
+__C.ffhq.base_path = '../data/ffhq/thumbnails128x128/'
 __C.ffhq.mask_size = 64
 
 __C.dataset = edict()
