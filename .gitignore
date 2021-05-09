@@ -148,3 +148,10 @@ model/Recurrent_KPN.py
 
 runner_blind_inpainting.py
 model/KPN_2_deblur_blind.py
+
+dataset/celeba
+dataset/celeba-hq
+dataset/paris/test.txt
+dataset/paris/val.txt
+dataset/paris/train.txt
+dataset/places
