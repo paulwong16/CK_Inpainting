@@ -13,5 +13,14 @@ in our experiments. For the irregular masks, we use the test set of
 
 Since we don't have the rights to hold any datasets, please download them from original sources. 
 
-## Prerequisite
+For FFHQ dataset, you can use the .txt files under `dataset/ffhq/` to get exactly same splits in our experiments.
+For ParisStreetView dataset, you should create your own data splits .txt files and put them under `dataset/paris/`
 
+## Get Started
+
+Basic environments: `Python >= 3.6` and `PyTorch >= 1.4.0`.
+
+Required packages:
+```bash
+pip install -r requirements.txt
+```
