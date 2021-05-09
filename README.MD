@@ -1,4 +1,4 @@
-# CK_Inpainting
+# Contextual Kernel Inpainting
 
 This repository contains the source code for the paper [Learning Contextual Kernels for High Quality Image Inpainting]().
 
@@ -73,7 +73,7 @@ python runner_inpainting.py --config={CONFIG} --test --weights={CHECKPOINTS_PATH
 
 ## Pre-trained Model
 
-Coming soon.
+https://drive.google.com/drive/folders/10diAVDy2y2NtoGLYmoB-H4Spef8DbwJC?usp=sharing
 
 ## License
 
@@ -83,8 +83,7 @@ CK_Inpainting is release under MIT license (see [LICENSE](https://github.com/pau
 
 We thank anonymous reviewers in ECE 644 Winter 2021 at the University of Alberta.
 
-This project is not possible without multiple great opensourced codebases. 
-We list some notable examples below.
+We thank the following open source projects and codes.
 
 - [KPN-PyTorch](https://github.com/z-bingo/kernel-prediction-networks-PyTorch)
 
