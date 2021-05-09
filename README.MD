@@ -16,6 +16,20 @@ Since we don't have the rights to hold any datasets, please download them from o
 For FFHQ dataset, you can use the .txt files under `dataset/ffhq/` to get exactly same splits in our experiments.
 For ParisStreetView dataset, you should create your own data splits .txt files and put them under `dataset/paris/`
 
+Organize your dataset as follows:
+```
+
+├── data
+│   ├── kitti
+│   │   │── ImageSets
+│   │   │── training
+│   │   │   ├──calib & velodyne & label_2 & image_2 & (optional: planes)
+│   │   │── testing
+│   │   │   ├──calib & velodyne & image_2
+├── pcdet
+├── tools
+```
+
 ## Get Started
 
 ### Environments
