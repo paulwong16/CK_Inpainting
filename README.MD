@@ -1,6 +1,8 @@
 # Contextual Kernel Inpainting
 
-This repository contains the source code for the paper [Learning Contextual Kernels for High Quality Image Inpainting]().
+Authors: Zhijie Wang & Hanqiu Deng & Binkai Tan
+
+This repository contains the source code for the paper [Learning Contextual Kernels for High Quality Image Inpainting]() (This work is done for ECE 644 Winter 2020, University of Alberta).
 
 ![Overview](http://paulwong16.github.io/files/MM21/1_shadow.png)
 
