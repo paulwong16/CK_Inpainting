@@ -4,6 +4,10 @@ Authors: Zhijie Wang & Hanqiu Deng & Binkai Tan
 
 This repository contains the source code for the paper [Learning Contextual Kernels for High Quality Image Inpainting]() (This work is done for ECE 644 Winter 2021, University of Alberta).
 
+This work was previously submitted as a paper in 2021, however, it neither got accepted nor has follwo-up work. After all I think it worthes open-source and hope it could be useful to any future work. 
+
+We don't have any plan to relase the paper draft.
+
 ![Overview](http://paulwong16.github.io/files/MM21/1_shadow.png)
 
 ## Datasets
